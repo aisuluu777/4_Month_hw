@@ -19,7 +19,7 @@ class BookModel(models.Model):
                              verbose_name='Выберите жанр')
     gmail = models.TextField(verbose_name='Введите почту автора', blank=True)
     author = models.CharField(max_length=100, verbose_name='Введите имя автора', default='No name')
-    audi_book = models.URLField(verbose_name='укажите ссылку с ютуба', blank=True)
+    audi_book = models.URLField(verbose_name='укажите ссылку с ютуба')
 
     def __str__(self):
         return self.title
