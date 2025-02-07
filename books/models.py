@@ -15,7 +15,7 @@ class BookModel(models.Model):
     description = models.TextField(verbose_name='Введите краткое описания книги', blank=True)
     price = models.PositiveIntegerField(verbose_name='Введите название', default=250)
     released_date = models.DateField(verbose_name='Укажите дату выпуска')
-    genre = models.CharField(max_length=15 ,choices=GENRE_CHOICES, default='классика',
+    genre = models.CharField(max_length=15 ,choices=GENRE_CHOICES, default='CLASSIC',
                              verbose_name='Выберите жанр')
     gmail = models.TextField(verbose_name='Введите почту автора', blank=True)
     author = models.CharField(max_length=100, verbose_name='Введите имя автора', default='No name')
