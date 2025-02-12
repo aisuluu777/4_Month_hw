@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21d2aa02-cdf5-436f-b1ad-95babb7b6fb2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clothes/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/hashtags.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/clothes/all_clothes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/clothes/for_adults.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/clothes/for_children.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/clothes/for_teenagers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/components/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/components/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/book.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/book_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/book_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +79,7 @@
       <workItem from="1739256773502" duration="1755000" />
       <workItem from="1739258555471" duration="10053000" />
       <workItem from="1739342100143" duration="2198000" />
-      <workItem from="1739347896421" duration="3295000" />
+      <workItem from="1739347896421" duration="5005000" />
     </task>
     <servers />
   </component>
