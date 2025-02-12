@@ -3,6 +3,8 @@ from datetime import datetime
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from . import models
+from .models import Review
+
 
 def book_list_view(request):
     if request.method == 'GET':
@@ -22,6 +24,21 @@ def book_detail_view(request, id):
         }
         return render(request, template_name='book_detail.html',
                       context=context_object_name)
+
+def check_review_view(request):
+    if request.method == 'POST':
+        book_id = request.POST.get('book_id')
+        review_text = request.POST.get('review_text')
+        if not review_text or len(review_text) < 5:
+            return HttpResponse('отзыв должен содержать не меньше 5 букв')
+        stars = request.POST.get('stars')
+
+
+
+    book = get_object_or_404 (models.BookModel, id=id)
+    review = Review(book_id=book, review=review_text, stars=stars)
+    review.save()
+
 
 
 
