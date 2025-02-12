@@ -30,11 +30,6 @@ def book_detail_view(request, id):
 
 
 
-
-
-
-
-
 # Create your views here.
 def about_me(request):
     if request.method == 'GET':
