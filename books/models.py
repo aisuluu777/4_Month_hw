@@ -6,7 +6,7 @@ class BookModel(models.Model):
         ('FANTASY', 'FANTASY'),
         ('CLASSIC', 'CLASSIC'),
         ('MYSTERY', 'MYSTERY'),
-        ('PHSYCOLOGY', 'PHSYCOLOGY'),
+        ('PHSYCHOLOGY', 'PHSYCOLOGY'),
         ('THRILLER', 'THRILLER'),
         ('DRAMA', 'DRAMA'),
     )
@@ -37,7 +37,10 @@ class Review(models.Model):
     name = models.CharField(max_length=100, verbose_name='Введите имя пользователя')
     date = models.DateField(auto_now_add=True)
     review_text = models.TextField(verbose_name='Оставить отзыв')
+    # price = models.DecimalField типа float но лучше
 
     def __str__(self):
         return f'{self.name} - {self.book_choice.title}'
+
+
 

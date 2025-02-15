@@ -1,9 +1,8 @@
 from datetime import datetime
 
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse
-from . import models
-from .models import Review
+from . import models, forms
 
 
 def book_list_view(request):
@@ -18,13 +17,23 @@ def book_list_view(request):
 
 def book_detail_view(request, id):
     if request.method == 'GET':
+        form = forms.ReviewForm()
         query = get_object_or_404(models.BookModel, id=id)
         context_object_name = {
             'book_id' : query,
+            'form' : form,
         }
         return render(request, template_name='book_detail.html',
                       context=context_object_name)
-
+    elif request.method == 'POST':
+            form = forms.ReviewForm(request.POST, request.FILES)
+            if form.is_valid():
+                comment = form.save(commit=False)
+                comment.save()
+                book_id = comment.book_choice.id
+                return redirect('book_detail', id=book_id)
+            else:
+                return render(request, 'book_detail.html', {'form': form})
 
 
 

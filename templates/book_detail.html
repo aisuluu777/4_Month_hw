@@ -25,30 +25,15 @@
         <div class="comment">
             <p>{{ i.date }}: {{ i.name }} <strong> Отзыв: </strong>{{ i.review_text }}</p>
         </div>
-     
     </div>
     {% endfor %}
 
-
-<div class="add-comment mt-4">
-        <h5>Оставьте ваш комментарий</h5>
-        <form id="reviewForm" method="POST" action="{% url 'check_review_view' %}">
-            {% csrf_token %}
-            <input type="hidden" name="book_id" value="{{ book_id.id }}">
-
-            <div class="form-group">
-                <label for="reviewText">Ваш отзыв:</label>
-                <textarea id="reviewText" name="review_text" class="form-control" rows="4" required></textarea>
-            </div>
-
-            <div class="form-group mt-2">
-                <button type="submit" class="btn btn-primary">Отправить комментарий</button>
-            </div>
-        </form>
-    </div>
+    <form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Отправить</button>
+</form>
 </div>
-
-
 
 
 {% include 'components/footer.html' %}

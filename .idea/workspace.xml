@@ -5,7 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21d2aa02-cdf5-436f-b1ad-95babb7b6fb2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/basket/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/books/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/basket/basket_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/basket/basket_update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/basket/create_basket.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/76c49908-e9a6-4614-9956-447bfe648113.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/76c49908-e9a6-4614-9956-447bfe648113.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothes/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/clothes/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/book_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/book_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/clothes/all_clothes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/clothes/all_clothes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/components/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +32,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
-        <option value="Python Script" />
         <option value="CSS File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -45,6 +62,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -79,7 +97,11 @@
       <workItem from="1739256773502" duration="1755000" />
       <workItem from="1739258555471" duration="10053000" />
       <workItem from="1739342100143" duration="2198000" />
-      <workItem from="1739347896421" duration="5005000" />
+      <workItem from="1739347896421" duration="9539000" />
+      <workItem from="1739428310037" duration="20017000" />
+      <workItem from="1739523116333" duration="300000" />
+      <workItem from="1739523458685" duration="5550000" />
+      <workItem from="1739599201965" duration="3896000" />
     </task>
     <servers />
   </component>
