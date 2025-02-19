@@ -1,40 +1,42 @@
 from django.shortcuts import render
 from . import models
-# Create your views here.
-
-def all_clothes(request):
-    if request.method == "GET":
-        query = models.ClothesModel.objects.all().order_by('-id')
-        context_object_name = {
-            'clothes' : query,
-        }
-        return render(request, template_name='clothes/all_clothes.html', context=context_object_name)
-
-def adult_clothes(request):
-    if request.method == "GET":
-        query = models.ClothesModel.objects.filter(tags__name='Взрослая').order_by('-id')
-        context_object_name = {
-            'adults' : query,
-        }
-        return render(request, template_name='clothes/for_adults.html', context=context_object_name)
-
-def teenagers_clothes(request):
-    if request.method == "GET":
-        query = models.ClothesModel.objects.filter(tags__name='Подростковая').order_by('-id')
-        context_object_name = {
-            'teenagers' : query,
-        }
-        return render(request, template_name='clothes/for_teenagers.html', context=context_object_name)
+from django.views import generic
 
 
-def children_clothes(request):
-    if request.method == "GET":
-        query = models.ClothesModel.objects.filter(tags__name='Детская').order_by('-id')
-        context_object_name = {
-            'children': query,
-        }
-        return render(request, template_name='clothes/for_children.html', context=context_object_name)
+class ClothesListView(generic.ListView):
+    template_name = 'clothes/all_clothes.html'
+    context_object_name = 'clothes'
+    model = models.ClothesModel
+
+    def get_queryset(self):
+        return  self.model.objects.all().order_by('-id')
 
 
 
+class AdultClothesView(generic.ListView):
+    template_name = 'clothes/for_adults.html'
+    context_object_name = 'adults'
+    model = models.ClothesModel
 
+    def get_queryset(self):
+        return self.model.objects.filter(tags__name='Взрослая').order_by('-id')
+
+
+
+class TeenClothesView(generic.ListView):
+    template_name = 'clothes/for_teenagers.html'
+    context_object_name = 'teenagers'
+    model = models.ClothesModel
+
+    def get_queryset(self):
+        return self.model.objects.filter(tags__name='Подростковая').order_by('-id')
+
+
+
+class KidClothesView(generic.ListView):
+    template_name = 'clothes/for_children.html'
+    context_object_name = 'children'
+    model = models.ClothesModel
+
+    def get_queryset(self):
+        return self.model.objects.filter(tags__name='Детская').order_by('-id')
