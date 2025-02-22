@@ -33,7 +33,7 @@ class BookModel(models.Model):
 
 class Review(models.Model):
 
-    book_choice = models.ForeignKey(BookModel, on_delete=models.CASCADE, related_name='books')
+    book_choice = models.ForeignKey(BookModel, on_delete=models.CASCADE, related_name='reviews')
     name = models.CharField(max_length=100, verbose_name='Введите имя пользователя')
     date = models.DateField(auto_now_add=True)
     review_text = models.TextField(verbose_name='Оставить отзыв')

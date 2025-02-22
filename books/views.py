@@ -29,7 +29,6 @@ class BookListView(generic.ListView):
         return self.model.objects.all().order_by('-id')
 
 
-
 class BookDetailView(generic.DetailView):
     template_name = 'book_detail.html'
     context_object_name = 'book_id'
@@ -38,12 +37,11 @@ class BookDetailView(generic.DetailView):
     def get_object(self, *args, **kwargs):
         book_id = self.kwargs.get('id')
         return get_object_or_404(models.BookModel, id=book_id)
-    
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['review_form'] = forms.ReviewForm()
         return context
-
 
 
 class CreateReviewView(generic.edit.CreateView):
@@ -54,10 +52,6 @@ class CreateReviewView(generic.edit.CreateView):
     def form_valid(self, form):
         print(form.cleaned_data)
         return super(CreateReviewView, self).form_valid(form=form)
-
-
-
-
 
 
 
