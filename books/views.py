@@ -47,7 +47,7 @@ class BookDetailView(generic.DetailView):
 class CreateReviewView(generic.edit.CreateView):
     template_name = 'book_detail.html'
     form_class = forms.ReviewForm
-    success_url = '/book_detail/'
+    success_url = '/create_review/'
 
     def form_valid(self, form):
         print(form.cleaned_data)

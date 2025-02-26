@@ -27,12 +27,8 @@
         </div>
     </div>
     {% endfor %}
+ <button><a href="{% url 'create_review' %}">Оставить отзыв</a></button>
 
-    <form action="{% url 'create_review' %}" enctype="multipart/form-data">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Отправить</button>
-</form>
 </div>
 
 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Добро пожаловать!</h1>
+<ol>
+{% for i in employees %}
+ <li>
+     <p>{{ i.first_name }}</p>
+     <p>{{ i.age }}</p>
+     <p>{{ i.it_direction }}</p>
+     <p>{{ i.message }}</p>
+     {% if i.salary %}
+     <p> У этого человека такая зарплата - {{ i.salary }}</p>
+        {% else %}
+        <p>Произошла ошибка</p>
+     {%endif%}
+ </li>
+{% endfor %}
+</ol>
+
+<form action="{% url 'users:login' %}" method="POST">
+    {% csrf_token %}
+    <button type="submit">Выйти из аккаунта</button>
+</form>
+
+</body>
+</html>
