@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21d2aa02-cdf5-436f-b1ad-95babb7b6fb2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/food/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/food/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/food/add_ingridient.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/food/recipe_create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/food/recipe_delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/food/recipe_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/food/recipe_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/food/recipe_update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/76c49908-e9a6-4614-9956-447bfe648113.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/76c49908-e9a6-4614-9956-447bfe648113.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/components/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/food/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/food/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/food/recipe_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/food/recipe_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +200,7 @@
       <workItem from="1740640220211" duration="7406000" />
       <workItem from="1740648698972" duration="3427000" />
       <workItem from="1740724150992" duration="13359000" />
-      <workItem from="1740740827652" duration="9626000" />
+      <workItem from="1740740827652" duration="10153000" />
     </task>
     <servers />
   </component>

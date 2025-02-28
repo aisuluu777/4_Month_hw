@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>Ингредиенты:</h1>
-{% for i in ingridients %}
+{% for i in ingridients.recipes.all %}
        <p>{{ i.name }} </p>
        <p>{{ i.quantity }}</p>
 {% endfor %}

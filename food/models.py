@@ -10,7 +10,7 @@ class Recipe(models.Model):
 class Ingredient(models.Model):
     name = models.CharField(max_length=500, verbose_name='Укажите название ингредиента')
     quantity = models.PositiveIntegerField(verbose_name='Укажите количество')
-    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name='ingredients')
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name='recipes')
 
 
 
