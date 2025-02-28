@@ -6,9 +6,10 @@
 </head>
 <body>
 <h1>Ингредиенты:</h1>
-{% for i in ingridients.recipes.all %}
-       <p>{{ i.name }} </p>
-       <p>{{ i.quantity }}</p>
+{% for ingredient in recipe.ingredients.all %}
+    <p>{{ ingredient.name }}</p>
+    <p>{{ ingredient.quantity }}</p>
 {% endfor %}
+
 </body>
 </html>

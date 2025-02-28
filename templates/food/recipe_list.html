@@ -9,8 +9,9 @@
 {% for i in recipe_list %}
 <p>{{ i.title }}</p>
 <p>{{ i.description}}</p>
+<p>{{ i.id }}</p>
 <button><a href="/recipe_list/{{ i.id }}/delete/">Удалить</a></button>
-<button><a href="/recipe_detail/{{ i.id }}/">Посмотреть</a></button>
+<button><a href="/recipe/{{ i.id }}/">Посмотреть</a></button>
 {% endfor %}
 
 </body>

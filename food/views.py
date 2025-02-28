@@ -11,17 +11,17 @@ class RecipeListView(generic.ListView):
     model = models.Recipe
 
     def get_queryset(self):
-         return self.model.objects.all().order_by('-id')
+         return self.model.objects.all()
 
 
 class RecipeDetailView(generic.DetailView):
     template_name = 'food/recipe_detail.html'
-    model = models.Ingredient
-    context_object_name = 'ingridients'
+    model = models.Recipe
+    context_object_name = 'recipe'
 
     def get_object(self):
-        ingredient_id = self.kwargs.get('id')
-        return get_object_or_404(models.Ingredient, id=ingredient_id)
+        recipe_id = self.kwargs.get('id')
+        return get_object_or_404(models.Recipe, id=recipe_id)
 
 
 class RecipeCreateView(generic.CreateView):
