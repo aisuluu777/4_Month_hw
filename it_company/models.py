@@ -17,6 +17,7 @@ class EmployeeModel(User):
     experience = models.PositiveIntegerField(verbose_name='Укажите опыт работы')
     any_projects = models.TextField(verbose_name='Укажите проекты в которых вы участвовали')
     linkedin = models.CharField(max_length=700, verbose_name='Укажите ссылку вашего Linkedin')
+    message = models.CharField(max_length=500, null=True, blank=True)
     salary = models.PositiveIntegerField()
 
 

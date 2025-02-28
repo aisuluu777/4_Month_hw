@@ -38,10 +38,10 @@ class BookDetailView(generic.DetailView):
         book_id = self.kwargs.get('id')
         return get_object_or_404(models.BookModel, id=book_id)
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['review_form'] = forms.ReviewForm()
-        return context
+    # def get_context_data(self, **kwargs):
+    #     context = super().get_context_data(**kwargs)
+    #     context['review_form'] = forms.ReviewForm()
+    #     return context
 
 
 class CreateReviewView(generic.edit.CreateView):

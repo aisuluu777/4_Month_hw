@@ -10,6 +10,7 @@ urlpatterns = [
     path('', include('basket.urls')),
     path('', include('parser_app.urls')),
     path('', include('it_company.urls')),
+    path('', include('slider.urls')),
 
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
