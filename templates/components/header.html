@@ -52,7 +52,9 @@
                     <a class="nav-link enable" href="{% url 'litres_form' %}" style="color: yellow;">Начать парсинг</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link enable" href="#" style="color: yellow;">Итоговая Контрольная работа</a>
+                    <a class="nav-link enable" href="{% url 'recipe_list' %}" style="color: yellow;">Список блюд</a>
+                    <a class="nav-link enable" href="{% url 'recipe_create' %}" style="color: yellow;">Добавить блюдо</a>
+
                 </li>
             </ul>
             <form action="{% url 'search' %}" method="GET" class="d-flex" role="search">

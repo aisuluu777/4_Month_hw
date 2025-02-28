@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'basket',
     'parser_app',
     'it_company',
-    'slider'
+    'slider',
+    'food'
 
 ]
 
