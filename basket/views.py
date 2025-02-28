@@ -38,8 +38,8 @@ class BasketDeleteView(generic.DeleteView):
     success_url = '/basket_list_view/'
 
     def get_object(self, *args, **kwargs):
-        basket_id = self.kwargs.get('basket_id')
-        return get_object_or_404(self.model, id=basket_id)
+        basket_id = self.kwargs.get('id')
+        return get_object_or_404(models.BasketModel, id=basket_id)
 
         # delete_obj = cache.get('delete_obj')
         # if not delete_obj:
