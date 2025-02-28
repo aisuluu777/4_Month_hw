@@ -71,7 +71,7 @@ class BasketUpdateView(generic.UpdateView):
     #     return update_obj
     #
     # @receiver(post_save, sender=BasketModel)
-    # def clean(sender, instance, **kwargs):
+    # def clean_cache(sender, instance, **kwargs):
     #     cache.delete('update_obj')
 
 
